@@ -94,7 +94,7 @@ router.post("/",checkAuth, upload.single("productImage"),  (req, res, next) => {
       });
     });
 });
-
+//Han g bhai 
 router.get("/:productId", (req, res, next) => {
   const id = req.params.productId;
   Product.findById(id)
